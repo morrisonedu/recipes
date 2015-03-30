@@ -29,5 +29,10 @@ test "email must exist" do
   assert_not @chef.valid?
 end
 
+test "email must have @" do
+  @chef.email="the.jeff.morrisongmail.com"
+  assert_not @chef.valid?
+end
+
 
 end

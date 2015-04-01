@@ -7,4 +7,11 @@
     <%= gravatar_for@recipe.chef, size: 150 %>
     <p>Brought to you by: <%= @recipe.chef.chefname %></p>
   </div>
+  <div class="col-md-8">
+    <%= link_to "Edit this recipe", edit_recipe_path(@recipe), class: "btn btn-success pull-right" %>
+    <%= @recipe.summary %>
+    <div class="well">
+      <%= @recipe.description %>
+    </div>
+  </div>
 </div>

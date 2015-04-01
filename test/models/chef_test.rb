@@ -14,10 +14,7 @@ test "chefname should be present" do
   assert_not @chef.valid?
 end
 
-test "chefname min is 2 char" do
-  @chef.chefname = "a"
-  assert_not @chef.valid?
-end
+test "chefname"
 
 test "chefname max is 50 char" do
   @chef.chefname="a"*51
